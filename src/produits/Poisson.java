@@ -1,4 +1,4 @@
-package produit;
+package produits;
 
 import personnages.Gaulois;
 

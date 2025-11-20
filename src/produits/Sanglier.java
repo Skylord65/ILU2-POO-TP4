@@ -1,4 +1,4 @@
-package produit;
+package produits;
 
 public class Sanglier extends Produit {
 

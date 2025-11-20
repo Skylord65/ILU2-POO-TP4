@@ -1,4 +1,4 @@
-package produit;
+package produits;
 
 public enum Unite {
 	G("g"), KG("kg"), L("l"), ML("ml"), PIECE("piece");
