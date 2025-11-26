@@ -1,13 +1,16 @@
 package villagegaulois;
 
 import personnages.Gaulois;
+import produits.*;
 
 public class Etal {
 	private Gaulois vendeur;
-	private String produit;
+	private IProduit<P>[] produit;
+	private int nbProduit = 0;
 	private int quantiteDebutMarche;
 	private int quantite;
 	private boolean etalOccupe = false;
+	private int prix;
 
 	public boolean isEtalOccupe() {
 		return etalOccupe;
@@ -20,5 +23,7 @@ public class Etal {
 	public int getQuantite() {
 		return quantite;
 	}
-
+	
+	public void installerVendeur(Gaulois vendeur, P[] produit, int prix) {
+	}
 }
