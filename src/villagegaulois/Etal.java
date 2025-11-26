@@ -1,9 +1,9 @@
 package villagegaulois;
 
 import personnages.Gaulois;
-import produits.Produit;
+import produits.IProduit;
 
-public class Etal<P extends Produit> {
+public class Etal<P extends IProduit> {
 	private Gaulois vendeur;
 	private P produit;
 	private int quantiteDebutMarche;
