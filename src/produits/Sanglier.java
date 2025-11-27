@@ -1,17 +1,26 @@
 package produits;
 
+import personnages.Gaulois;
+
 public class Sanglier extends Produit {
 
-	String date;
+	Gaulois chasseur;
+	int poids;
 	
-	protected Sanglier(String date) {
+	public Sanglier(int poids, Gaulois chasseur) {
 		super("sanglier", Unite.KG);
-		this.date = date;
+		this.poids = poids;
+		this.chasseur = chasseur;
+	}
+
+
+	@Override
+	public String decrireProduit() { 
+		return nom + "de " + poids + unite.toString() + " chassé par " + chasseur.getNom() + ".";
 	}
 
 	@Override
-	public String decrireProduit() {
-		return nom + " pêché " + date + ".";
+	public int calculerPrix(int prix) {
+		return this.poids*prix;
 	}
-
 }
